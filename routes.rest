@@ -35,3 +35,44 @@ content-Type: application/json
 
 ### Delete contact
 DELETE http://localhost:8080/contacts/
+
+
+
+
+
+
+
+// ROUTES FOR PUBLISHED LINK
+
+### Get all contacts
+GET https://project1-dudd.onrender.com/contacts
+
+### Get a single contact
+GET https://project1-dudd.onrender.com/contacts/65a20d88efcb4191fc494639
+
+### Create a new contact
+POST https://project1-dudd.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Luis",
+    "lastName": "Chavez",
+    "email": "luis@test.com",
+    "favoriteColor": "Blue",
+    "birthday": "06/13/1998"
+}
+
+### Update a contact information
+PUT https://project1-dudd.onrender.com/contacts/65a20d88efcb4191fc494639 HTTP/1.1
+content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Chavezzzzz",
+    "email": "John@tesst.com",
+    "favoriteColor": "Red",
+    "birthday": "06/13/1998"
+}
+
+### Delete contact
+DELETE https://project1-dudd.onrender.com/contacts/65a20d88efcb4191fc494639
